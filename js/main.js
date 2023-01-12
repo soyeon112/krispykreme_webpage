@@ -57,12 +57,25 @@ menu__item.forEach(function (menu__item, index) {
   });
 });
 
-// 배너 스와이퍼
+// 배너
+
+// 스와이퍼
+const fadeEls = document.querySelectorAll(".banner .fade-in");
 new Swiper(".banner .swiper", {
   spaceBetween: 10,
   loop: true,
-  autoplay: true,
+  autoplay: {
+    delay: 6000,
+  },
+  centeredSlides: true, //true이면 1번 슬라이드가 중앙에 위치함
   pagination: {
     clickable: true,
   },
+});
+
+fadeEls.forEach(function (fadeEl, index) {
+  gsap.to(fadeEl, 0.5, {
+    delay: (index + 1) * 0.7, //0.7, 1.4, 2.1, 2.7초 마다 실행
+    opacity: 1,
+  });
 });

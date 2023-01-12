@@ -224,42 +224,93 @@ header .menu__bg {
 }
 
 /* 배너 */
-section.banner {
-  background-color: #333;
+.banner {
+  background-color: #fff;
   position: relative;
   /* width: 100%; */
-  height: 600px;
+  height: 660px;
   margin: 0 auto;
   overflow: hidden;
 }
-section.banner > .inner {
+.banner > .inner {
   width: 100%;
-  height: 650px;
-  background-color: #333;
+  /* height: 650px; */
+  background-color: #fff;
 }
-section.banner .swiper {
+.banner .swiper {
   width: 1980px;
-  height: 550px;
+  height: 600px;
   position: absolute;
   top: 100px;
   left: 50%;
   margin-left: calc(1980px / -2);
 }
-section.banner .swiper .swiper-wrapper {
+.banner .swiper .swiper-wrapper {
 }
-section.banner .swiper .swiper-wrapper .swiper-slide {
+.banner .swiper .swiper-wrapper .swiper-slide {
   /* background-color: #005f3f; */
 }
-section.banner .swiper .swiper-wrapper .swiper-slide .banner__text {
+
+.banner .swiper .swiper-wrapper .swiper-slide .fade-in {
+  opacity: 0;
+}
+.banner .swiper .swiper-wrapper .swiper-slide .banner__text {
   position: absolute;
   top: 90px;
   left: 490px;
 }
-section.banner
-  .swiper
-  .swiper-wrapper
-  .swiper-slide
-  .banner__text
-  > .banner__btn {
+.banner .swiper .swiper-wrapper .swiper-slide .banner__text.one {
+  position: absolute;
+  top: -10px;
+  left: 550px;
+}
+.banner .swiper .swiper-wrapper .swiper-slide .fade-in .banner__btn {
   margin-top: 15px;
+}
+.banner .swiper .swiper-wrapper .swiper-slide .banner__text.one .banner__btn {
+  position: absolute;
+  bottom: 30px;
+  left: 35px;
+}
+
+.banner .swiper .swiper-pagination {
+  bottom: 150px;
+  left: 0;
+}
+.notice {
+  position: relative;
+}
+.notice > .inner {
+  width: 100%;
+}
+.notice .notice-contents {
+  z-index: 2;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: -50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-top: 3px dashed #000;
+  border-bottom: 1px solid#000;
+}
+
+.notice .notice-contents .notice__item {
+  width: 50%;
+  margin: 6px 0;
+  position: absolute;
+  left: 280px;
+  box-sizing: border-box;
+}
+.notice .notice-contents .notice__item > span {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  padding-right: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+}
+.notice .notice-contents .notice__item > a {
+  padding-left: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
 }
