@@ -1,0 +1,265 @@
+/* 공통 */
+body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4; /* 16px의 1.4배 */
+  font-family: "Nanum Gothic", sans-serif;
+  height: 3000px;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+.inner {
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
+/* 배너 버튼 공통 - 자세히보기 */
+.banner__btn {
+  width: 180px;
+  height: 40px;
+  background-color: #005f3f;
+  border-radius: 30px;
+  padding: 8px 0 10px 20px;
+  box-sizing: border-box;
+
+  position: relative;
+  cursor: pointer;
+}
+.banner__btn > a {
+  color: #fff;
+  font-size: 14.5px;
+  font-weight: 700;
+}
+.banner__btn .btn__circle {
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #005f3f;
+  font-weight: 700;
+  padding-top: 2px;
+  padding-left: 3px;
+  box-sizing: border-box;
+}
+
+/* 헤더 */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-image: url("../image/bg_header.gif");
+
+  z-index: 9;
+}
+header > .inner {
+  /* width: 980px; */
+  height: 100px;
+}
+header .logo {
+  height: 70px;
+  position: absolute;
+  top: 18px;
+  left: 0;
+}
+header .sub-menu {
+  margin-top: 14px;
+  width: 830px;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  /* background-color: antiquewhite; */
+}
+header .sub-menu ul.sub__contents {
+  display: flex;
+  justify-content: flex-end;
+}
+header .sub-menu ul.sub__contents li {
+  position: relative;
+}
+header .sub-menu ul.sub__contents li::before {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+header .sub-menu ul.sub__contents li:first-child::before {
+  display: none;
+}
+header .sub-menu ul.sub__contents li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 8px;
+}
+
+/* 메인 메뉴 */
+header .main-menu {
+  height: 200px;
+  position: relative;
+  top: 100px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+}
+header .main-menu .new__img {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+}
+header .main-menu ul.main__contents {
+  position: absolute;
+  top: -50px;
+  right: 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+header .main-menu ul.main__contents li {
+  margin-right: 7px;
+  width: 120px;
+}
+
+header .main-menu ul.main__contents li .item__main {
+}
+header .main-menu ul.main__contents li .item__main a.btn {
+  color: transparent;
+  display: block;
+  height: 40px;
+  margin-bottom: 30px;
+  background-position: center;
+}
+header .main-menu .btn.menu {
+  background-image: url("https://www.krispykreme.co.kr/images/common/gnb_menu01.png");
+  background-repeat: no-repeat;
+}
+header .main-menu .btn.menu.hover {
+  background-image: url("https://www.krispykreme.co.kr/images/common/gnb_menu01_on.png");
+  background-repeat: no-repeat;
+}
+header .main-menu .btn.store {
+  background-image: url("https://www.krispykreme.co.kr/images/common/gnb_menu02.png");
+  background-repeat: no-repeat;
+}
+header .main-menu .btn.store.hover {
+  background-image: url("https://www.krispykreme.co.kr/images/common/gnb_menu02_on.png");
+  background-repeat: no-repeat;
+}
+header .main-menu .btn.delivery {
+  background-image: url("https://www.krispykreme.co.kr/images/common/gnb_menu08_220610.png");
+  background-repeat: no-repeat;
+}
+header .main-menu .btn.delivery.hover {
+  background-image: url("https://www.krispykreme.co.kr/images/common/gnb_menu08_on_220610.png");
+  background-repeat: no-repeat;
+}
+header .main-menu .btn.event {
+  background-image: url("https://www.krispykreme.co.kr/images/common/gnb_menu03.png");
+  background-repeat: no-repeat;
+}
+header .main-menu .btn.event.hover {
+  background-image: url("https://www.krispykreme.co.kr/images/common/gnb_menu03_on.png");
+  background-repeat: no-repeat;
+}
+header .main-menu .btn.brand {
+  background-image: url("https://www.krispykreme.co.kr/images/common/gnb_menu05.png");
+  background-repeat: no-repeat;
+}
+header .main-menu .btn.brand.hover {
+  background-image: url("https://www.krispykreme.co.kr/images/common/gnb_menu05_on.png");
+  background-repeat: no-repeat;
+}
+header .main-menu .btn.survey {
+  background-image: url("https://www.krispykreme.co.kr/images/common/gnb_menu07.png");
+  background-repeat: no-repeat;
+}
+header .main-menu .btn.survey.hover {
+  background-image: url("https://www.krispykreme.co.kr/images/common/gnb_menu07_on.png");
+  background-repeat: no-repeat;
+}
+header .main-menu .main__contents li .item__contents {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+}
+header .main-menu .main__contents li .item__contents.hover {
+  display: block;
+  opacity: 1;
+}
+header .main-menu .main__contents li .item__contents li {
+  padding: 5px 0;
+  /* width: 100px; */
+}
+header .main-menu .main__contents li .item__contents li a {
+  color: #000;
+}
+header .menu__bg {
+  width: 100%;
+  height: 200px;
+  border-top: 4px solid #005f3f;
+  border-bottom: 1px solid #005f3f;
+  /* background-color: #005f3f; */
+  background-color: rgba(255, 255, 255, 0.5);
+  /* background-color: #e5e5e5; */
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* 배너 */
+section.banner {
+  background-color: #333;
+  position: relative;
+  /* width: 100%; */
+  height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+section.banner > .inner {
+  width: 100%;
+  height: 650px;
+  background-color: #333;
+}
+section.banner .swiper {
+  width: 1980px;
+  height: 550px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: calc(1980px / -2);
+}
+section.banner .swiper .swiper-wrapper {
+}
+section.banner .swiper .swiper-wrapper .swiper-slide {
+  /* background-color: #005f3f; */
+}
+section.banner .swiper .swiper-wrapper .swiper-slide .banner__text {
+  position: absolute;
+  top: 90px;
+  left: 490px;
+}
+section.banner
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .banner__text
+  > .banner__btn {
+  margin-top: 15px;
+}

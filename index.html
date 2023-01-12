@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make Today Special! 크리스피크림도넛</title>
+    <link rel="icon" href="./image/logo.png" />
+    <!-- css reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- gsap & scroll to plugin -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"
+      integrity="sha512-9DDJWj17gkdeGHU0Zr76wc9jY2g0IwE7ZCIxakVYKyzlTiOWZDZJOTaVgAzNo+LB7+EbGXxwCXkOP+a5rgkuqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <a href="javascript:void(0)" class="logo"
+          ><img src="./image/logo.png" alt="크리스피크림도넛 로고"
+        /></a>
+
+        <div class="sub-menu">
+          <ul class="sub__contents">
+            <li><a href="javascript:void(0)">로그인</a></li>
+            <li><a href="javascript:void(0)">회원가입</a></li>
+            <li><a href="javascript:void(0)">고객의소리</a></li>
+            <li><a href="javascript:void(0)">윤리경영</a></li>
+            <li><a href="javascript:void(0)">사이트맵</a></li>
+            <li><a href="javascript:void(0)">English</a></li>
+          </ul>
+        </div>
+
+        <div class="main-menu">
+          <!-- <div class="new__img"> -->
+          <img
+            src="https://www.krispykreme.co.kr/images/common/gnb_sub_menu_visual_20221227.png"
+            alt="신제품이미지"
+            class="new__img"
+          />
+          <!-- </div> -->
+          <ul class="main__contents">
+            <li>
+              <div class="item__main">
+                <a href="javascript:void(0)" class="btn menu">menu</a>
+              </div>
+              <ul class="item__contents">
+                <li><a href="javascript:void(0)">신제품/인기제품</a></li>
+                <li><a href="javascript:void(0)">이달의 메뉴</a></li>
+                <li><a href="javascript:void(0)">도넛</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="item__main">
+                <a href="javascript:void(0)" class="btn store">store</a>
+              </div>
+              <ul class="item__contents">
+                <li><a href="javascript:void(0)">매장찾기</a></li>
+                <li><a href="javascript:void(0)">임대제안</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="item__main">
+                <a href="javascript:void(0)" class="btn delivery">delivery</a>
+              </div>
+              <ul class="item__contents">
+                <li><a href="javascript:void(0)">딜리버리</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="item__main">
+                <a href="javascript:void(0)" class="btn event">evnet</a>
+              </div>
+              <ul class="item__contents">
+                <li><a href="javascript:void(0)">진행 이벤트</a></li>
+                <li><a href="javascript:void(0)">종료 이벤트</a></li>
+                <li><a href="javascript:void(0)">당첨자 발표</a></li>
+                <li><a href="javascript:void(0)">제휴 서비스</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="item__main">
+                <a href="javascript:void(0)" class="btn brand">brand</a>
+              </div>
+              <ul class="item__contents">
+                <li><a href="javascript:void(0)">도넛극장</a></li>
+                <li><a href="javascript:void(0)">브랜드 스토리</a></li>
+                <li><a href="javascript:void(0)">브랜드 영상</a></li>
+                <li><a href="javascript:void(0)">공지사항</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="item__main">
+                <a href="javascript:void(0)" class="btn survey">survey</a>
+              </div>
+              <ul class="item__contents">
+                <li><a href="javascript:void(0)">설문조사</a></li>
+                <li><a href="javascript:void(0)">설문조사 운영점</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu__bg"></div>
+    </header>
+
+    <!-- 배너 -->
+    <section class="banner">
+      <div class="inner">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./image/bg_miffy.jpg" alt="" class="banner__item" />
+              <div class="banner__text">
+                <img
+                  src="./image/miffy_txt.png"
+                  alt="미피 / 포근한겨울을 부탁해~"
+                />
+                <div class="banner__btn">
+                  <a href="javascript:void(0)">자세히보기</a>
+                  <div class="btn__circle">
+                    <span class="material-icons"> chevron_right </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/bg_sweetW.png" alt="" class="banner__item" />
+              <div class="banner__text">
+                <img
+                  src="./image/miffy_txt.png"
+                  alt="미피 / 포근한겨울을 부탁해~"
+                />
+                <div class="banner__btn">
+                  <a href="javascript:void(0)">자세히보기</a>
+                  <div class="btn__circle">
+                    <span class="material-icons"> chevron_right </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="../image/bg_miffy.jpg" alt="" class="banner__item" />
+              <div class="banner__text">
+                <img
+                  src="./image/miffy_txt.png"
+                  alt="미피 / 포근한겨울을 부탁해~"
+                />
+                <div class="banner__btn">
+                  <a href="javascript:void(0)">자세히보기</a>
+                  <div class="btn__circle">
+                    <span class="material-icons"> chevron_right </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
