@@ -63,11 +63,9 @@ menu__item.forEach(function (menu__item, index) {
 const fadeEls = document.querySelectorAll(".banner .fade-in");
 new Swiper(".banner .swiper", {
   spaceBetween: 10,
-  loop: true,
-  autoplay: {
-    delay: 6000,
-  },
-  centeredSlides: true, //true이면 1번 슬라이드가 중앙에 위치함
+  // loop: true,
+  autoplay: true,
+  // centeredSlides: true, //true이면 1번 슬라이드가 중앙에 위치함
   pagination: {
     clickable: true,
   },
@@ -77,5 +75,31 @@ fadeEls.forEach(function (fadeEl, index) {
   gsap.to(fadeEl, 0.5, {
     delay: (index + 1) * 0.7, //0.7, 1.4, 2.1, 2.7초 마다 실행
     opacity: 1,
+  });
+});
+
+// 이벤트 슬라이더
+new Swiper(".promotion .swiper", {
+  slidesPerView: 3, // 슬라이드 몇개 보여줄건지 (한번에 보여줄 슬라이드 개수)
+  spaceBetween: 10, //슬라이드 간격(사이 여백)이 10px
+  centeredSlides: true, //true이면 1번 슬라이드가 중앙에 위치함
+  loop: true,
+  // autoplay: {
+  //   delay: 5000, //5초
+  // },
+});
+
+const promotion_btn = document.querySelectorAll(".promotion .promotion__btn");
+const promotion_btn_text = document.querySelectorAll(
+  ".promotion__btn .btn__text"
+);
+console.log(promotion_btn_text);
+
+promotion_btn.forEach(function (pro_btnEl, index) {
+  pro_btnEl.addEventListener("mouseover", function () {
+    promotion_btn_text[index].classList.add("hover");
+  });
+  pro_btnEl.addEventListener("mouseout", function () {
+    promotion_btn_text[index].classList.remove("hover");
   });
 });
