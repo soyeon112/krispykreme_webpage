@@ -89,6 +89,7 @@ new Swiper(".promotion .swiper", {
   // },
 });
 
+const promotionEl = document.querySelectorAll(".promotion_items");
 const promotion_btn = document.querySelectorAll(".promotion .promotion__btn");
 const promotion_btn_text = document.querySelectorAll(
   ".promotion__btn .btn__text"
@@ -98,8 +99,10 @@ console.log(promotion_btn_text);
 promotion_btn.forEach(function (pro_btnEl, index) {
   pro_btnEl.addEventListener("mouseover", function () {
     promotion_btn_text[index].classList.add("hover");
+    promotionEl[index].classList.add("active");
   });
   pro_btnEl.addEventListener("mouseout", function () {
     promotion_btn_text[index].classList.remove("hover");
+    promotionEl[index].classList.remove("active");
   });
 });

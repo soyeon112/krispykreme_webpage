@@ -362,11 +362,16 @@ header .menu__bg {
 .promotion .promotion_items {
   width: 300px;
   margin: 25px;
-  border: 1px solid #ccc;
+  border: 1px solid #c3bdae;
   border-radius: 10px;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.5);
   overflow: hidden;
+  transition: all 0.3s;
+}
+.promotion .promotion_items.active {
+  /* border: 2.5px solid #c3bdae; */
+  border-radius: 50px;
 }
 .promotion .promotion_items .item__text {
   width: 100%;
@@ -408,4 +413,12 @@ header .menu__bg {
 .promotion .promotion_items .item__text .promotion__btn .btn__text.hover {
   color: #fff;
   background-color: #005f3f;
+}
+
+/* sns영역 - 인스타그램 */
+.sns {
+  width: 100%;
+  height: 300px;
+  background-image: url("../image/img_mainm_bg2.jpg");
+  background-repeat: repeat-x;
 }
